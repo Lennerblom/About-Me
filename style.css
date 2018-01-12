@@ -4,10 +4,38 @@
 }
 
 h1 {
-    color: rgb(19, 61, 151);
+    color: rgb(191, 201, 223);
     text-align: center;
     font-size: 72px;
-};
+    background-color: darkblue;
+}
 h2 {
-    font-size: 150%;
-};
+    font-size: 32px;
+    color: rgb(191, 201, 223);
+    background-color: brown;
+    position: relative;
+    left: 10px;
+    width: 75%;
+    text-align: center;
+
+}
+aside {
+    width: 20%;
+    display: block;
+    background-color:rgb(6, 94, 75);
+    min-height: 100%;
+    float: right;
+    position: fixed;
+    top: 110px;
+    left: 1050px;
+    
+}
+
+p {
+    color: rgb(12, 10, 10);
+    position: relative;
+    left: 10px;
+}
+article {
+    background-color: aliceblue;
+}

@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 var userPoints = 0;
  
@@ -83,4 +83,4 @@ console.log(answer3);
                 userPoints++
             }
             alert('You got ' + userPoints + ' points');
-        
+        */
