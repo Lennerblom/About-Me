@@ -30,19 +30,32 @@ if (answer === 'yes' || answer ==='y') {
     }
     alert('you have' + userPoints);
 
-var answer2 = prompt('I have three kids, do you think all three are boys?'); 
+var answer2 = prompt('I have three kids, do you think all three are boys?').toLocaleLowerCase();
 
-   if (answer === 'yes' || answer ==='y') {
-    alert('Nope! ALL girls, my oldest is almost 16');
+console.log(answer2);
+
+if (answer2 === 'yes' || answer2 ==='y') {
+alert('Nope! ALL girls, my oldest is almost 16');
     //if it's correct give them a point
     userPoints;
 } else {
         //if it's not correct tell them to try again
-        alert('Your right! ALL girls, my oldest is almost 16.');
+    alert('Your right! ALL girls, my oldest is almost 16.');
     }
-    alert('you have' + userPoints++);
+alert('you have' + userPoints++);
 
-var answer3 = prompt('Do you think I own any pets, most people do?') {
-    
-}
+var answer3 = prompt('Do you think I own any pets, most people do?').toLocaleLowerCase();
+
+
+console.log(answer2);
+
+    if (answer3 === 'yes' || answer3 === 'y') {
+        alert('That\s right, I have two dogs named Lucy and Masey.');
+        userPoints++
+    } else {
+        alert('Dogs. I have two dogs named Lucy and Masey');
+    }
+    alert('You have' + userPoints);
+
+
 
