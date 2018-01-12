@@ -42,5 +42,7 @@ var answer2 = prompt('I have three kids, do you think all three are boys?');
     }
     alert('you have' + userPoints++);
 
-var answer3 = prompt('')
+var answer3 = prompt('Do you think I own any pets, most people do?') {
+    
+}
 
