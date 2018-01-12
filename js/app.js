@@ -30,7 +30,7 @@ if (answer === 'yes' || answer ==='y') {
     }
     alert('you have' + userPoints);
 
-   var answer2 = prompt('I have three kids, do you think all three are boys?'); 
+var answer2 = prompt('I have three kids, do you think all three are boys?'); 
 
    if (answer === 'yes' || answer ==='y') {
     alert('Nope! ALL girls, my oldest is almost 16');
@@ -41,4 +41,6 @@ if (answer === 'yes' || answer ==='y') {
         alert('Your right! ALL girls, my oldest is almost 16.');
     }
     alert('you have' + userPoints++);
+
+var answer3 = prompt('')
 
