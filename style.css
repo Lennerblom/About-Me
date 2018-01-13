@@ -57,7 +57,8 @@ article {
     position: absolute;
     top: 150px;
     left: 400px;
-    border: 2px darkblue;
+    border-width: 5px;
+    border-color: darkblue;
     font-size: 20px;
     background-color: rgb(191, 201, 223);
     padding: 10px;
