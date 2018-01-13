@@ -35,15 +35,11 @@ p {
     color: rgb(12, 10, 10);
     position: relative;
     left: 10px;
+    background-color: rgb(191, 201, 223);
     
 }
 article {
     background-color: argb(191, 201, 223);
-}
-#intro {
-    font-size: 20px;
-    background-color: rgb(191, 201, 223);
-    padding: 5px;
 }
 
 #mePic {
@@ -55,12 +51,24 @@ article {
     width: 350px;
 }
 
-div {
-    height: 500px;
-    width: 500px;
+#divIntro {
+    height: 300px;
+    width: 550px;
     position: absolute;
     top: 150px;
     left: 400px;
     border: 2px darkblue;
-
+    font-size: 20px;
+    background-color: rgb(191, 201, 223);
+    padding: 10px;
+}
+#intro {
+    background-color: rgb(191, 201, 223);
+}
+#other {
+    width: 550px;
+    position: absolute;
+    top: 750px;
+    left: 400px;
+    background-color: rgb(191, 201, 223);
 }
