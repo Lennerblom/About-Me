@@ -101,18 +101,16 @@ while (i < 4) {
 
 var favState = ['Montana','Oregon','California','Georgia', 'Utah','Hawaii'];
 //var stateNum = favState.indexOf;
-while(j < 6) {
-  var answer7 = prompt('Besides Washington, guess one of my favorite States?');
+for (var j = 0; j < favState.length; j++) {
+  var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();
   console.log('favorite state' + answer7);
-  for (var j = 0; j < favState.length; j++) {
-    if (answer7 <= favState.indexOf) {
-      alert('Yes, your right,' + answer7 + ' is one of my favorite states.');
-      j++;
-      break;
-    } else {
-      alert('No ' + answer7 + ' is not one of my favorite states, try again.');
-    }
+  if (answer7 === favState[0] || favState[1] || favState[2] || favState[3] || favState[4] || favState[5]) {
+    alert('Yes, your right, ' + answer7 + ' is one of my favorite states.');
+    break;
+  } else {
+    alert('No ' + answer7 + ' is not one of my favorite states, try again.');
   }
+}
 /*var j = 0;
 while (j < 4) {
   var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();
@@ -126,4 +124,4 @@ while (j < 4) {
   }
   j++;
 }
-*/}
+*/
