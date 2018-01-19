@@ -2,7 +2,7 @@
 
 var userPoints = 0;
 
-/*console.log('hello world');
+console.log('hello world');
 
 alert('Welcome, my name is Mike and I\'m going to see how well you know me, or how well you can guess.');
 
@@ -28,6 +28,7 @@ if (answer === 'yes' || answer ==='y') {
   //if it's not correct tell them to try again
   alert('Actually, I have been married for 18 years!');
 }
+
 alert('you have ' + userPoints + ' point');
 
 var answer2 = prompt('I have three kids, do you think all three are boys?').toLocaleLowerCase();
@@ -82,7 +83,7 @@ if (answer5 === 'yes' || answer5 === 'y') {
   userPoints++;
 }
 alert('You got ' + userPoints + ' points');
-*/
+
 var i = 0;
 while (i < 4) {
   var answer6 = prompt('Guess what number I’m thinking of between 1 and 5?');
@@ -101,16 +102,26 @@ while (i < 4) {
 
 var favState = ['Montana','Oregon','California','Georgia', 'Utah','Hawaii'];
 //var stateNum = favState.indexOf;
-for (var j = 0; j < favState.length; j++) {
+//var num = favState.length -1 || -2 || -3 || -4 || -5 || -6;
+var attempts = 0;
+var choice = true;
+while(choice && attempts <favState.length){
   var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();
-  console.log('favorite state' + answer7);
-  if (answer7 === favState[0] || favState[1] || favState[2] || favState[3] || favState[4] || favState[5]) {
-    alert('Yes, your right, ' + answer7 + ' is one of my favorite states.');
-    break;
-  } else {
-    alert('No ' + answer7 + ' is not one of my favorite states, try again.');
+  for (var j = 0; j < favState.length; j++) {
+    console.log('favorite state' + answer7);
+    if (answer7 === favState[j]) {
+      alert('Yes, your right, ' + answer7 + ' is one of my favorite states.');
+      userPoints++;
+      choice = false;
+    } else if (answer7 !== favState[j]) {
+      alert('No ' + answer7 + ' is not one of my favorite states, try again.');
+      attempts++;
+    }
   }
 }
+alert('You got ' + userPoints + ' points');
+document.write('You got ' + userPoints + ' points.');
+document.write(" Here are all my favorite states " + favState.toString());
 /*var j = 0;
 while (j < 4) {
   var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();

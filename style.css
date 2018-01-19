@@ -1,13 +1,14 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(120, 196, 226);
+    background-color: rgb(123, 132, 136);
+   
 }
 
 h1 {
     color: rgb(191, 201, 223);
     text-align: center;
     font-size: 72px;
-    background-color: darkblue;
+    background-color: rgb(39, 42, 49);
 }
 h2 {
     font-size: 32px;
@@ -32,7 +33,7 @@ aside {
 }
 
 p {
-    color: rgb(12, 10, 10);
+    color: rgb(8, 8, 8);
     position: relative;
     left: 10px;
     background-color: rgb(191, 201, 223);
@@ -45,7 +46,7 @@ article {
 #mePic {
     width: 350px;
     position: relative;
-    left:20px;
+    left:5px;
 }
 #vegiePic {
     width: 350px;
@@ -56,20 +57,23 @@ article {
     width: 550px;
     position: absolute;
     top: 150px;
-    left: 400px;
-    border-width: 5px;
-    border-color: darkblue;
+    left: 450px;
+    border: 2px solid;
+    border-color: rgb(191, 201, 223);
     font-size: 20px;
-    background-color: rgb(191, 201, 223);
+    background-color: rgb(39, 42, 49);
     padding: 10px;
+    border-radius: 3%;
 }
 #intro {
     background-color: rgb(191, 201, 223);
+    width: 520px;
+    padding: 7px;
 }
 #other {
     width: 550px;
     position: absolute;
     top: 900px;
-    left: 400px;
+    left: 420px;
     background-color: rgb(191, 201, 223);
 }
