@@ -10,45 +10,29 @@ var user = prompt('First of all, what is your name?');
 
 alert('Hi ' + user + '!  I\'m gonna ask you five questions and give you a point for each correct one.');
 
-var answer = prompt('Do you think I\'m married?'  ,  'type yes or no').toLocaleLowerCase();
-
+var answer = prompt('Do you think I\'m married?' , 'type yes or no').toLocaleLowerCase();
 console.log(answer);
-
-//check if the user's answer is correct
-//what is correct?
-//find out what the answer is?
-//toLowerCAse or toUpperCase
-//use a confirm box?
 
 if (answer === 'yes' || answer ==='y') {
   alert('That\'s correct!  I have been married for 18 years!');
-  //if it's correct give them a point
   userPoints++;
 } else {
-  //if it's not correct tell them to try again
   alert('Actually, I have been married for 18 years!');
 }
-
 alert('you have ' + userPoints + ' point');
 
 var answer2 = prompt('I have three kids, do you think all three are boys?').toLocaleLowerCase();
-
 console.log(answer2);
 
 if (answer2 === 'yes' || answer2 ==='y') {
   alert('Nope! ALL girls, my oldest is almost 16');
-  //if it's correct give them a point
-
 } else {
-  //if it's not correct tell them to try again
   alert('Your right! ALL girls, my oldest is almost 16.');
   userPoints++;
 }
 alert('you have ' + userPoints + ' points');
 
 var answer3 = prompt('Do you think I own any pets, most people do?').toLocaleLowerCase();
-
-
 console.log(answer3);
 
 if (answer3 === 'yes' || answer3 === 'y') {
@@ -65,7 +49,6 @@ console.log(answer4);
 
 if (answer4 === 'yes' || answer4 === 'y') {
   alert('No, fooled you.  Breakfast is the best!');
-
 } else {
   alert('Correct!  It\'s breakfast.');
   userPoints++;
@@ -73,7 +56,6 @@ if (answer4 === 'yes' || answer4 === 'y') {
 alert('You got ' + userPoints + ' points');
 
 var answer5 = prompt('Every morning I have to wake up at 4:00 am to get ready for work. Do you think this is true?').toLocaleLowerCase();
-
 console.log(answer5);
 
 if (answer5 === 'yes' || answer5 === 'y') {
@@ -101,8 +83,6 @@ while (i < 4) {
 }
 
 var favState = ['Montana','Oregon','California','Georgia', 'Utah','Hawaii'];
-//var stateNum = favState.indexOf;
-//var num = favState.length -1 || -2 || -3 || -4 || -5 || -6;
 var attempts = 0;
 var choice = true;
 while(choice && attempts <favState.length){
@@ -121,7 +101,9 @@ while(choice && attempts <favState.length){
 }
 alert('You got ' + userPoints + ' points');
 document.write('You got ' + userPoints + ' points.');
-document.write(" Here are all my favorite states " + favState.toString());
+document.write('Here are all my favorite states: ' + favState.toString());
+
+
 /*var j = 0;
 while (j < 4) {
   var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();
