@@ -2,7 +2,7 @@
 
 var userPoints = 0;
 
-/*console.log('hello world');
+console.log('hello world');
 
 alert('Welcome, my name is Mike and I\'m going to see how well you know me, or how well you can guess.');
 
@@ -82,7 +82,7 @@ if (answer5 === 'yes' || answer5 === 'y') {
   userPoints++;
 }
 alert('You got ' + userPoints + ' points');
-*/
+
 var i = 0;
 while (i < 4) {
   var answer6 = prompt('Guess what number I’m thinking of between 1 and 5?');
@@ -99,29 +99,21 @@ while (i < 4) {
   i++;
 }
 
-var favState = ['Montana','Oregon','California','Georgia', 'Utah','Hawaii'];
-//var stateNum = favState.indexOf;
-for (var j = 0; j < favState.length; j++) {
-  var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();
-  console.log('favorite state' + answer7);
-  if (answer7 === favState[0] || favState[1] || favState[2] || favState[3] || favState[4] || favState[5]) {
-    alert('Yes, your right, ' + answer7 + ' is one of my favorite states.');
+var favState = ['MONTANA','OREGON','CALIFORNIA','GEORGIA', 'UTAH','HAWAII'];
+var attempts = 0;
+do {
+  var answer7 = prompt('Besides Washington, guess one of my favorite States?').toUpperCase();
+  console.log('favorite state: ' + answer7);
+  if (favState.includes(answer7)) {
+    alert('Yes, your right, ' + answer7 + ' is one of my favorite states. These are all my favorite states: ' + favState.toString());
+    userPoints++;
     break;
   } else {
     alert('No ' + answer7 + ' is not one of my favorite states, try again.');
+    attempts++;
   }
-}
-/*var j = 0;
-while (j < 4) {
-  var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLocaleLowerCase();
-  console.log('favorite state' + answer7);
-  if (answer7 <= favState.length) {
-    alert('Yes, your right. Montana, Oregon, California, and Georgia are my favorite states');
-    i += 4;
-    userPoints++;
-  } else if (answer7 !== favState) {
-    alert('No guess again');
-  }
-  j++;
-}
-*/
+} while (attempts <= favState.length);
+
+alert('You got ' + userPoints + ' points');
+
+document.write('You got ' + userPoints + ' points.');
