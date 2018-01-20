@@ -106,29 +106,26 @@ function numGuess(){
 numGuess();
 
 function stateGuess(){
-  var favState = ['Montana','Oregon','California','Georgia', 'Utah','Hawaii'];
+  var favState = ['MONTANA','OREGON','CALIFORNIA','GEORGIA', 'UTAH','HAWAII'];
   var attempts = 0;
-  var choice = true;
-  while(choice && attempts <favState.length){
-    var answer7 = prompt('Besides Washington, guess one of my favorite States?').toLowerCase();
-    for (var j = 0; j < favState.length; j++) {
-      console.log('favorite state' + answer7);
-      if (favState.includes(answer7)) {
-        alert('Yes, your right, ' + answer7 + ' is one of my favorite states.');
-        userPoints++;
-        choice = false;
-      } else {
-        alert('No ' + answer7 + ' is not one of my favorite states, try again.');
-        attempts++;
-      }
+  do {
+    var answer7 = prompt('Besides Washington, guess one of my favorite States?').toUpperCase();
+    console.log('favorite state: ' + answer7);
+    if (favState.includes(answer7)) {
+      alert('Yes, your right, ' + answer7 + ' is one of my favorite states. These are all my favorite states: ' + favState.toString());
+      userPoints++;
+      break;
+    } else {
+      alert('No ' + answer7 + ' is not one of my favorite states, try again.');
+      attempts++;
     }
-  }
-  alert('You got ' + userPoints + ' points');
+  } while (attempts <= favState.length);
 }
+alert('You got ' + userPoints + ' points');
+
 stateGuess();
 
 document.write('You got ' + userPoints + ' points.');
-document.write('Here are all my favorite states: ' + favState.toString());
 
 
 /*var j = 0;
