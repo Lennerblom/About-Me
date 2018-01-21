@@ -1,14 +1,15 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(123, 132, 136);
-   
 }
 
 h1 {
+    width: 100%;
     color: rgb(191, 201, 223);
     text-align: center;
     font-size: 72px;
     background-color: rgb(39, 42, 49);
+    border-radius: inherit;
 }
 h2 {
     font-size: 32px;
@@ -53,24 +54,25 @@ article {
 
 #divIntro {
     height: 300px;
-    width: 550px;
+    width: 33%;
     position: absolute;
     top: 150px;
-    left: 450px;
+    left: 400px;
     border: 2px solid;
     border-color: rgb(191, 201, 223);
     font-size: 20px;
     background-color: rgb(39, 42, 49);
     padding: 10px;
-    border-radius: 3%;
+    
 }
 #intro {
     background-color: rgb(191, 201, 223);
-    width: 520px;
+    width: 30%;
     padding: 7px;
+    text-align: center;
 }
 #other {
-    width: 550px;
+    width: 30%;
     position: absolute;
     top: 970px;
     left: 400px;
